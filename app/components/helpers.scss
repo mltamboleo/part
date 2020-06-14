@@ -1,0 +1,33 @@
+///////////
+// Vars
+///////////
+
+/* Margin & Padding values */
+$lg_separation: 40px;
+$md_separation: 20px;
+$sm_separation: 10px;
+$xs_separation: 5px;
+
+/***********/
+/* Colores */
+/***********/
+
+$light-black: #555555;
+$light-gray: #efefef;
+$white: #ffffff;
+
+///////////////////////////////////////////////
+
+// Mixins
+@mixin dark_border($size) {
+	border: $size solid $light-black;
+}
+
+// Placeholders
+%item_box{
+	@include dark_border(10px);	
+	background-color: $white;
+}
+
+
+
